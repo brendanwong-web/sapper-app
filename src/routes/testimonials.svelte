@@ -17,69 +17,69 @@
 </svelte:head>
 <style>
   	span p {
-		margin-top: 1em;
-		margin-bottom: 1em;
-		padding-top: 0;
-    font-size: 1rem;
-    line-height: 1.3em;
-	}
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding-top: 0;
+      font-size: 1rem;
+      line-height: 1.3em;
+    }
 
-	span h2 {
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin-top: 1.5rem;
-	}
-	  .mobile {
-    padding: 1rem 2rem;
-  }
+    span h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+    }
+      .mobile {
+      padding: 1rem 2rem;
+    }
 
-	.desktop  {
-		padding-left: 10rem;
-		padding-right: 10em;
-  }
-  
-  .video {
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    padding-top: 60%;
-    border-radius: 9px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  }
+    .desktop  {
+      padding-left: 10rem;
+      padding-right: 10em;
+    }
+    
+    .video {
+      position: relative;
+      overflow: hidden;
+      width: 90%;
+      padding-top: 60%;
+      border-radius: 9px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
 
-  .vidcont {
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    .vidcont {
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-  .embed-responsive {
-    border-radius: 9px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
+    .embed-responsive {
+      border-radius: 9px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-  .videocaption h4 {
-    font-size: 1.5rem;
-    margin-left: 1.7rem;
-    margin-right: 1.7rem;
-    font-weight: 500;
-    color: #0b4236;
-    margin: 2rem auto 1rem auto;
-  }
+    .videocaption h4 {
+      font-size: 1.5rem;
+      margin-left: 1.7rem;
+      margin-right: 1.7rem;
+      font-weight: 500;
+      color: #0b4236;
+      margin: 2rem auto 1rem auto;
+    }
 
-  .videocaption p {
-    text-align: justify;
-    color: #0b4236;
-  }
+    .videocaption p {
+      text-align: justify;
+      color: #0b4236;
+    }
 
   @media only screen and (min-width: 760px) {
     span p {

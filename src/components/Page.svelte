@@ -71,7 +71,7 @@
     .top-writeup {
       width: 150%;
       text-align: left;
-      padding: 2rem 3rem 1rem 3rem;
+      padding: 1rem 3rem 1rem 3rem;
       border-bottom-left-radius: 7px;
       border-top-left-radius: 7px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
