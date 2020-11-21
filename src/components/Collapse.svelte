@@ -1,5 +1,5 @@
 <script>
-  import { slide, fly } from "svelte/transition";
+  import { slide, fly, fade } from "svelte/transition";
   import { createEventDispatcher } from 'svelte';
   import { media } from "../components/query-store";
   export let seperate;
@@ -61,18 +61,26 @@
     width: 100%;
     height: 3rem;
   }
+
+  .filler {
+    min-height: 1px;
+    height: fit-content;
+  }
 </style>
 
 <div>
   <div>
     <slot></slot>
   </div>
-  {#if visible}
-    <div transition:slide={{y: 400}}>
+  <div class="filler">
+      {#if visible}
+    <div transition:slide={{y: -800, duration: 800}}>
       <slot name="collapseContent"></slot>
     </div>
-  {/if}
-  <button class:desktop={!mobile} on:click={toggleVisbile}>{visible ? buttonCaptionOpen : buttonCaptionClosed}</button>
+      {/if}
+  </div>
+
+  <button transition:slide class:desktop={!mobile} on:click={toggleVisbile}>{visible ? buttonCaptionOpen : buttonCaptionClosed}</button>
 </div>
 {#if seperate}
 <div class='seperate'></div>
