@@ -12,7 +12,7 @@
   }
 
   p {
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem 1rem 1rem;
     font-size: 400;
     font-size: 1.3rem;
   }

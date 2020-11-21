@@ -30,6 +30,10 @@
 		height: auto;
 	}
 
+	.carousel {
+		margin-bottom: 2rem;
+	}
+
 	.text {
 		flex: 1;
 		background-color: #ace5ed;
