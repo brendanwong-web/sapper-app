@@ -19,15 +19,6 @@
     padding: 0em 2em 2em 2em;
   }
 
-	.container {
-		padding-left: 10rem;
-		padding-right: 10rem;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: repeat(2, auto);
-		grid-gap: 3rem;
-	}
-
 	span p:first-child {
 		margin-top: 0;
 		padding-top: 0;
@@ -84,12 +75,12 @@
 
     .body .right {
       flex: 1;
-      margin: 2rem 1rem;
+      margin: 2rem 2rem;
     }
 
     .assetcont {
       flex: 1;
-      margin: 0 1rem;
+      margin: 0 2rem;
     }
   }
 

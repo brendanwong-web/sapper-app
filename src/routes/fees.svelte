@@ -16,18 +16,12 @@
 
 </script>
 <style>
+	.mobile {
+		margin-bottom: 3rem;
+	}
 	.body {
     padding: 1.5em 1em 0em 1em;
   }
-
-	.container {
-		padding-left: 10rem;
-		padding-right: 10rem;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: repeat(2, auto);
-		grid-gap: 3rem;
-	}
 
 	span p:first-child {
 		margin-top: 0;
@@ -94,6 +88,7 @@
 	</span></Page>
 
 {#if mobile}
+<div class="mobile">
 	<div class="body">
 		<Card>
 			<span>
@@ -121,6 +116,7 @@
 			</span>
 		</Card>
 	</div>
+</div>
 {:else}
 <div class="desktop">
 	<Card>

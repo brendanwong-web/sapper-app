@@ -22,6 +22,8 @@
 	.container {
 		padding-left: 10rem;
 		padding-right: 10rem;
+		padding-bottom: 3rem;
+		margin-bottom: 3rem;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-template-rows: repeat(2, auto);

@@ -69,9 +69,12 @@
   }
 
   @media only screen and (min-width: 760px) {
+    .desktop {
+      margin-bottom: 8rem;
+    }
 
     .vidcont {
-      margin: 1rem auto 3rem auto;
+      margin: 3rem auto 3rem auto;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;

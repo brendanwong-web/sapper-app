@@ -27,6 +27,12 @@
     color: #636363;
     margin-top: 0;
   }
+  p {
+    margin: 0 2rem 1rem 2rem;
+    font-size: 400;
+    font-size: 1.3rem;
+  }
+
   }
 
 </style>
