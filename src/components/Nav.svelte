@@ -1,72 +1,123 @@
 <script>
 	import MediaQuery from './MediaQuery.svelte';
-	import { slide } from "svelte/transition";
+	import { slide, fly } from "svelte/transition";
 	export let segment;
 	let showMobile = false;
+	function closeMobile() {
+		showMobile = false;
+	}
 	
 </script>
 
 <style>
+	* {
+		box-sizing: border-box;
+	}
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 2;
 		font-weight: 300;
 		padding: 0 1em;
 		display: flex;
+		align-items: center;
+		height: 60px;
+		background-color: #fcfbf4;
 	}
 
-	.logo {
-		flex: 2;
+	.mobileNav {
+		justify-content: space-between;
+		z-index: 1;
+	}
+
+
+	.logo img {
+		margin-top: 5px;
+		max-height: 25px;
 	}
 
 	.hamburger{
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		position: relative;
-		top: 15px;
-		right: 0;
-  	z-index: 1;
+  	z-index: 3;
 		margin-right: 1rem;
+		width: 40px;
+		height: 50px;
 	}
 
-	.active-line:first-child  {
-		height: 4px;
-		width: 33px;
-		transform: rotate(45deg) translate(0px, 0px);
-		transform-origin: 0% 0%;
+	.active.line::before  {
+		transform: rotate(45deg) translate(44px, -48px);
+		background-color: #ffffff;
+		z-index: 3;
 	}
 
-	.active-line:nth-child(2) {
-		height: 4px;
-		width: 33px;
-		transform: rotate(-45deg) translate(-2px, -15px);
-		transform-origin: 100% 0%;
-
+	.active.line {
+		transform: translate(-60px, 0);
+		background-color: #ffffff;
+;
 	}
 
-	.active-line:last-child  {
-		transform: rotate(0deg) scale(0.1, 0.1);
-		opacity: 0%;
+	.active.line::after {
+		transform: rotate(-45deg) translate(33px, 56px);
+		background-color:#ffffff;
 	}
 
-	.line,
-	.active-line {
+	.line {
 		display: block;
-		width: 33px;
+		width: 36px;
 		height: 4px;
 		margin-bottom: 5px;
 		position: relative;
-		background: #cdcdcd;
+		background: #84cece;
 		border-radius: 3px;
-		z-index: 1;
+		z-index: 3;
+		transform-origin: 4px 0px;
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
 								background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
 								opacity 0.55s ease;
 	}
+	.line::before,
+	.line::after {
+		content: '';
+		display: block;
+		width: 36px;
+		height: 4px;
+		position: absolute;
+		background: #84cece;
+		border-radius: 3px;
+		z-index: 99;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+								background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+								opacity 0.55s ease;
+	}
+	.line::before {
+		transform: translate(0, -8px);
+	}
+
+
+	.line::after {
+		transform: translate(0, 8px);
+	}
 
 	.mobileUl {
+		font-size: 1.5rem;
 		display: flex;
 		flex-direction: column;
-		padding-left: 1.5rem;
 		align-items: flex-start;
+	}
+
+	.mobileDrawer {
+		padding: 70px 1.5rem 1.5rem;
+		position: fixed;
+		left: 0;
+		top: 0px;
+		z-index: 2;
+		background-color: #84cece;
 	}
 
 	ul {
@@ -84,64 +135,90 @@
 	}
 	li {
 		display: inline-block;
-	}
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
+
 	}
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		padding: 0.7em 0.5em 0em 0.5em;
+		margin-bottom: 0.5em;
 		display: block;
+	}
+
+	@media only screen and (min-width: 760px) {
+		* {
+			box-sizing: border-box;
+		}
+		nav {
+			overflow-x: hidden;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			z-index: 99;
+			width: 100%;
+			background-color: #fcfbf4;
+		}
+
+		.logo {
+			margin-right: auto;
+			flex: 3;
+		}
+
+		ul {
+			flex: 1;
+			margin-right: 2rem;
+		}
+
+		ul li {
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+
+		.active {
+			border-bottom: 2px solid #7fcacf;
+		}
 	}
 </style>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
 	{#if matches}
-	<nav>
+	<nav class="mobileNav">
 		<div on:click={() => {showMobile = !showMobile}} class="hamburger">
-			<div class="{showMobile? 'active-line' : 'line'}"></div>
-			<div class="{showMobile? 'active-line' : 'line'}"></div>
-			<div class="{showMobile? 'active-line' : 'line'}"></div>
+			<div class="line {showMobile? 'active' : ''}"></div>
 		</div>
 		<div class="logo">
-			<p>logo</p>
+			<img src="drawing.png" alt="logo failed">
 		</div>
+		{#if showMobile}
+		<div transition:fly={{x: -200}} class="mobileDrawer">
+			<ul transition:fly={{x: -200}} class="mobileUl">
+				<li on:click={closeMobile}><a href=".">Home</a></li>
+				<li on:click={closeMobile}><a href="about">About</a></li>
+				<li on:click={closeMobile}><a href="team">Team</a></li>
+				<li on:click={closeMobile}><a href="testimonials">Testimonials</a></li>
+				<li on:click={closeMobile}><a href="fees">Slots and Fees</a></li>
+				<li on:click={closeMobile}><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		{/if}
 	</nav>
-	{#if showMobile}
-	<ul transition:slide class="mobileUl">
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Testimonials</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Slots and Fees</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Contact</a></li>
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Team</a></li>
-	</ul>
-{/if}
 	{/if}
 </MediaQuery>
 <MediaQuery query="(min-width: 769px)" let:matches>
 	{#if matches}
 	<nav>
 		<div class="logo">
-			<p>logo</p>
+			<a href=".">
+				<img src="drawing.png" alt="logo failed">
+			</a>
+
 		</div>
 		<ul>
-			<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-			<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
-			<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Testimonials</a></li>
-			<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Slots and Fees</a></li>
-			<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">Contact</a></li>
-			<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Team</a></li>
+			<li><a href="about" class:active={segment === 'about'}>About</a></li>
+			<li><a href="team" class:active={segment === 'team'}>Team</a></li>
+			<li><a href="testimonials" class:active={segment === 'testimonials'}>Testimonials</a></li>
+			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
+			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
+
 		</ul>
 	</nav>
 	{/if}
