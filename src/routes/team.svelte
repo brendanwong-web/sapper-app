@@ -32,12 +32,12 @@
 		margin-top: 1em;
 		margin-bottom: 1em;
 		padding-top: 0;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		line-height: 1.3em;
 	}
 
 	span h2 {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		margin-top: 1.5rem;
 	}
