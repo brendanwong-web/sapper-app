@@ -33,6 +33,7 @@
 		margin-bottom: 1em;
 		padding-top: 0;
 		font-size: 1.5rem;
+		line-height: 1.3em;
 	}
 
 	span h2 {
@@ -47,7 +48,7 @@
 <svelte:window bind:scrollY={y} />
 <Page>
 	<span slot="verticalText">
-		<h2>Our Team</h2>
+		<h1>Our Team</h1>
 	</span>
 	<span slot="writeup">
 		<h2>Education Tailored To Your Child</h2>
