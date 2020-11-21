@@ -28,7 +28,7 @@
 		margin-top: 1em;
 		margin-bottom: 1em;
 		padding-top: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.3em;
 	}
 
@@ -74,7 +74,7 @@
 		margin-top: 1em;
 		margin-bottom: 1em;
 		padding-top: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.3em;
 	}
 

@@ -61,7 +61,7 @@
     .vertical-text {
       padding: 1.5rem 3rem 1rem 3rem;
       margin-left: 4rem;
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700; 
       text-align: right;
       text-shadow: -3px 3px 1px rgba(0,0,0,0.2);

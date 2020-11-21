@@ -22,8 +22,8 @@
 		padding: 0 1em;
 		display: flex;
 		align-items: center;
-		height: 60px;
-		background-color: #fcfbf4;
+		height: 68px;
+		background-color: #ffffff;
 	}
 
 	.mobileNav {
