@@ -32,10 +32,11 @@
 		margin-top: 1em;
 		margin-bottom: 1em;
 		padding-top: 0;
+		font-size: 1.5rem;
 	}
 
 	span h2 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		font-weight: 700;
 		margin-top: 1.5rem;
 	}
@@ -56,6 +57,18 @@
 	}
 
 	@media only screen and (min-width: 760px) {
+		span p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding-top: 0;
+		font-size: 1.5rem;
+	}
+
+	span h2 {
+		font-size: 1.7rem;
+		font-weight: 700;
+		margin-top: 1.5rem;
+	}
 		.card-body h3 {
 			margin: 1em 0 0 0;
 			font-size: 1.5rem;
