@@ -5,6 +5,11 @@
   export let seperate;
 	$:mobile = $media.small;
   const dispatch = createEventDispatcher();
+  function safariWorkaround(node) {
+    if(navigator.appVersion.includes('Safari')) {
+      node.style.overflow = 'hidden';
+    }
+  }
 
   let visible = false;
   export let buttonCaptionOpen;
@@ -74,7 +79,7 @@
   </div>
   <div class="filler">
       {#if visible}
-    <div transition:slide={{y: -800, duration: 800}}>
+    <div use:safariWorkaround transition:slide={{y: -800, duration: 800}}>
       <slot name="collapseContent"></slot>
     </div>
       {/if}
