@@ -19,10 +19,10 @@
 		top: 0;
 		z-index: 2;
 		font-weight: 300;
-		padding: 0 1em;
+		padding: 1em 1em;
 		display: flex;
 		align-items: center;
-		height: 68px;
+		height: 60px;
 		background-color: #ffffff;
 	}
 
@@ -33,15 +33,17 @@
 
 
 	.logo img {
-		margin-top: 5px;
-		max-height: 25px;
+		margin-top: 9px;
+		max-height: 30px;
 	}
 
 	.hamburger{
-		display: flex;
-		flex-direction: column;
+		padding-top: 9px;
+		display: grid;
+		place-items: center;
+/* 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: center; */
 		position: relative;
   	z-index: 3;
 		margin-right: 1rem;
@@ -51,26 +53,26 @@
 
 	.active.line::before  {
 		transform: rotate(45deg) translate(44px, -48px);
-		background-color: #ffffff;
+		background-color: #0f3f46;
 		z-index: 3;
 	}
 
 	.active.line {
 		transform: translate(-60px, 0);
-		background-color: #ffffff;
+		background-color: #0f3f46;
 ;
 	}
 
 	.active.line::after {
 		transform: rotate(-45deg) translate(33px, 56px);
-		background-color:#ffffff;
+		background-color:#0f3f46;
 	}
 
 	.line {
 		display: block;
 		width: 36px;
 		height: 4px;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 		position: relative;
 		background: #84cece;
 		border-radius: 3px;
@@ -96,12 +98,12 @@
 								opacity 0.55s ease;
 	}
 	.line::before {
-		transform: translate(0, -8px);
+		transform: translate(0, -10px);
 	}
 
 
 	.line::after {
-		transform: translate(0, 8px);
+		transform: translate(0, 10px);
 	}
 
 	.mobileUl {
@@ -112,12 +114,12 @@
 	}
 
 	.mobileDrawer {
-		padding: 70px 1.5rem 1.5rem;
+		padding: 70px 1.5rem 50px 1.5rem;
 		position: fixed;
 		left: 0;
 		top: 0px;
 		z-index: 2;
-		background-color: #84cece;
+		background-color: #c8f3f3;
 	}
 
 	ul {
@@ -135,6 +137,9 @@
 	}
 	li {
 		display: inline-block;
+		font-weight: 500;
+		width: 100%;
+		color: #101831;
 
 	}
 	a {
