@@ -155,6 +155,7 @@
 		}
 		nav {
 			overflow-x: hidden;
+			overflow-y: hidden;
 			justify-content: space-between;
 			position: fixed;
 			top: 0;
@@ -170,12 +171,14 @@
 
 		ul {
 			flex: 1;
-			margin-right: 2rem;
+			margin-right: 0rem;
 		}
 
 		ul li {
 			font-size: 1.2rem;
 			font-weight: 500;
+			width: auto;
+			margin-right: 0.5rem;
 		}
 
 		.active {
@@ -223,7 +226,6 @@
 			<li><a href="testimonials" class:active={segment === 'testimonials'}>Testimonials</a></li>
 			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
 			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
-
 		</ul>
 	</nav>
 	{/if}
