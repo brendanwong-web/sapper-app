@@ -2,6 +2,7 @@
   import { stores } from '@sapper/app';
   import { onMount } from 'svelte';
   import { media } from "../components/query-store";
+  import { animate } from "../animate.js";
 	$:mobile = $media.small;
   const { page } = stores();
   let param;
@@ -84,12 +85,19 @@
 
 <div class="container">
   {#if !mobile}
-    <div class="vertical-text">
+    <div class="vertical-text"
+      use:animate={{type: 'from', 'clipPath': 'inset(0 0 100% 0)', duration: 2}}
+    >
       <slot name="verticalText">
       </slot>
     </div>
   {/if}
-  <div class="top-writeup {param}">
+  <div class="top-writeup {param}"
+    use:animate={
+    !mobile ? {type: 'from', duration: 1, x: 200} :
+    {type: 'from', duration: 1, y: -200}
+}
+  >
     <slot name="writeup">
     </slot>
   </div>
