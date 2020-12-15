@@ -54,6 +54,11 @@
       color: #1a3246;
       background:#6bafe7;
     }
+
+    .workshops {
+      color: #4e2509;
+      background:#db693b;
+    }
   @media only screen and (min-width: 760px) {
     .container {
       display: flex;

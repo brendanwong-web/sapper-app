@@ -114,7 +114,7 @@
 	}
 
 	.mobileDrawer {
-		padding: 70px 1.5rem 50px 1.5rem;
+		padding: 70px 1.5rem 40px 1.5rem;
 		position: fixed;
 		left: 0;
 		top: 0px;
@@ -149,6 +149,15 @@
 		display: block;
 	}
 
+	li .new:after {
+			display: inline;
+			content: 'NEW!';
+			font-size: 0.6rem;
+			color: rgb(8, 46, 46);
+			vertical-align: super;
+			margin-left: 0.6em;
+		}
+
 	@media only screen and (min-width: 760px) {
 		* {
 			box-sizing: border-box;
@@ -162,6 +171,7 @@
 			z-index: 99;
 			width: 100%;
 			background-color: #fcfbf4;
+			padding-right: 0;
 		}
 
 		.logo {
@@ -184,6 +194,15 @@
 		.active {
 			border-bottom: 2px solid #7fcacf;
 		}
+
+		li .new:after {
+			display: inline;
+			content: 'NEW!';
+			font-size: 0.6rem;
+			color: rgb(66, 173, 173);
+			vertical-align: super;
+			margin-left: 0.3em;
+		}
 	}
 </style>
 
@@ -205,6 +224,7 @@
 				<li on:click={closeMobile}><a href="testimonials">Testimonials</a></li>
 				<li on:click={closeMobile}><a href="fees">Slots and Fees</a></li>
 				<li on:click={closeMobile}><a href="contact">Contact</a></li>
+				<li on:click={closeMobile}><a href="workshops" class="new">Workshops</a></li>
 			</ul>
 		</div>
 		{/if}
@@ -226,6 +246,7 @@
 			<li><a href="testimonials" class:active={segment === 'testimonials'}>Testimonials</a></li>
 			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
 			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
+			<li><a href="workshops" class:active={segment === 'workshops'} class:new={true}>Workshops</a></li>
 		</ul>
 	</nav>
 	{/if}
