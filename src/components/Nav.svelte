@@ -144,7 +144,7 @@
 	}
 	a {
 		text-decoration: none;
-		padding: 0.7em 0.5em 0em 0.5em;
+		padding: 0.7em 0.5em 0.5em 0.5em;
 		margin-bottom: 0.5em;
 		display: block;
 	}
@@ -179,13 +179,19 @@
 			flex: 3;
 		}
 
+		a { 
+			padding: 0;
+			padding-bottom: 0.2em;
+			margin: 0.7em 0.5em 0.5em 0;
+		}
+
 		ul {
 			flex: 1;
 			margin-right: 0rem;
 		}
 
 		ul li {
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 			font-weight: 500;
 			width: auto;
 			margin-right: 0.5rem;
@@ -224,7 +230,7 @@
 				<li on:click={closeMobile}><a href="testimonials">Testimonials</a></li>
 				<li on:click={closeMobile}><a href="fees">Slots and Fees</a></li>
 				<li on:click={closeMobile}><a href="contact">Contact</a></li>
-				<li on:click={closeMobile}><a href="workshops" class="new">Workshops</a></li>
+				<li on:click={closeMobile}><a href="Community" class="new">Community Outreach</a></li>
 			</ul>
 		</div>
 		{/if}
@@ -246,7 +252,7 @@
 			<li><a href="testimonials" class:active={segment === 'testimonials'}>Testimonials</a></li>
 			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
 			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
-			<li><a href="workshops" class:active={segment === 'workshops'} class:new={true}>Workshops</a></li>
+			<li><a href="community" class:active={segment === 'community'} class:new={true}>Community outreach</a></li>
 		</ul>
 	</nav>
 	{/if}

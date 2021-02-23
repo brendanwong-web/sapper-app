@@ -55,7 +55,7 @@
       background:#6bafe7;
     }
 
-    .workshops {
+    .community {
       color: #4e2509;
       background:#db693b;
     }
@@ -65,7 +65,7 @@
       margin: 3rem auto 1rem auto;
     }
     .vertical-text {
-      padding: 1.5rem 3rem 1rem 3rem;
+      padding: 1rem 3rem 1rem 3rem;
       margin-left: 4rem;
       font-size: 2.5rem;
       font-weight: 700; 
