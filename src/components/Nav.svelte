@@ -252,7 +252,7 @@
 			<li><a href="testimonials" class:active={segment === 'testimonials'}>Testimonials</a></li>
 			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
 			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
-			<li><a href="community" class:active={segment === 'community'} class:new={true}>Community outreach</a></li>
+			<li><a href="community" class:active={segment === 'community'} class:new={true}>Community Outreach</a></li>
 		</ul>
 	</nav>
 	{/if}

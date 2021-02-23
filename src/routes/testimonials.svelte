@@ -168,8 +168,8 @@
     <div class="videocaption">
       <h4>All Children Can Learn</h4>
       <p>
-        However, some children simply require a different system of learning, or a different style of teaching. This video showcases a student of Learning Hearts Therapy before and after our reading programme. The child came to us barely able to read and with severe gaps
-        in his english education. Watch the video above to see how much his confidence and ability to read and comprehend increased after 20 sessions in our Programme.
+        However, some children simply require a different system of learning, or a different style of teaching. This video showcases a student of Learning Hearts Therapy before and after our 20-session reading programme in a neighbourhood school. The child came to us barely able to read and with severe gaps
+        in his english education. Watch the video above to see how much his confidence and ability to read and comprehend increased after our Programme.
       <p>
     </div>
   </div>

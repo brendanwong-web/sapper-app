@@ -106,9 +106,9 @@
 	.contact1 span{
 		display: block;
 		margin-bottom: 1rem;
+		font-size: 1.2rem;
+		font-weight: 700;
 	}
-
-
 
 	@media only screen and (min-width: 600px) {
 	.container {
@@ -208,7 +208,7 @@
 	</div>
 	<div class="container">
 		<div class="grid-container">
-			<img id="c1" class:mobile='{mobile}' src='c1.jpg' alt='mum' />
+			<img id="d3" class:mobile='{mobile}' src='d3.jpeg' alt='mum' />
 			<img id="c2" src='c2.png' alt='mum' />
 		</div>
 		<div class="text">
@@ -224,29 +224,31 @@
 			<h2>Concrete and meaningful activities</h2>
 		</div>
 	</div>
-	<div class="contact contact1">
-		<p>
-			<span>Venue</span> SMOTA class room / home-based
-		</p>
-		<p>
-			<span>Timing</span>
-			1.5hr per session. Block of 10 sessions.
-		</p>
-		<p>
-			<span>Cost</span>
-			Materials provided & One time registration fee $50
-		</p>
-		<p>
-			To register, please fill in and return form
-		</p>
-	</div>
-	<div class="contact">
-		<p>
-			If your’e interested to <span>volunteer</span> with Reading Angels, 
-			or know any <span>family or child</span> who may
-			 benefit from this programme, kindly contact us at
-		</p>
-	</div>
+
+		<div class="contact contact1">
+			<p>
+				<span>Venue</span> SMOTA class room / home-based
+			</p>
+			<p>
+				<span>Timing</span>
+				1.5hr per session. Block of 10 sessions.
+			</p>
+			<p>
+				<span>Cost</span>
+				Materials provided & One time registration fee $50
+			</p>
+			<p>
+				To register, please fill in and return form
+			</p>
+		</div>
+		<div class="contact">
+			<p>
+				If your’e interested to <span>volunteer</span> with Reading Angels, 
+				or know any <span>family or child</span> who may
+				 benefit from this programme, kindly <a href="contact">contact us</a>
+			</p>
+		</div>
+
 
 
 	

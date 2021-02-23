@@ -124,6 +124,7 @@
 				<h3 class="">Consultation Fee:</h3>
 				<p class="">$180/hr</p>
 				<h3  class="">Therapy Fees:</h3>
+				<p>Varies by learning phase</p>
 				<p>Payable quarterly in the first month of each quarter</p>
 				<h3  class="">Registration Fee:</h3>
 				<p>$100, payable annually, per subject time slot</p>
