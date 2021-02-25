@@ -145,7 +145,7 @@
 		margin-top: 2rem;
 		font-size: 1.1rem;
 		line-height: 1.5rem;
-		width: 40%;
+		width: 50%;
 	}
 
 	.text h2 {
@@ -177,9 +177,10 @@
 			<h2>Community Outreach Programme</h2>
 			<p>As part of the SMOTA Reading Angels programme, our reading programme is being brought to vulnerable children from disadvantaged families in the Bukit Batok neighbourhood.</p>
 			<Linebreak />
+			<a href="https://www.worldbank.org/en/news/immersive-story/2019/11/06/a-learning-target-for-a-learning-revolution">Ending Learning Poverty</a>
 	</span>
 </Page>
-
+	
 	<div class="container">
 		<div class="grid-container">
 			<img id="a1" src='c1.jpg' alt='mum' />

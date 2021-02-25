@@ -31,6 +31,10 @@
   .contact {
     background:#061f33;
   }
+
+  .community {
+    background: #2c1303;
+  }
 </style>
 
 <div class="linebreak {param}"></div>
