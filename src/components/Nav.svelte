@@ -230,7 +230,7 @@
 				<li on:click={closeMobile}><a href="testimonials">Testimonials</a></li>
 				<li on:click={closeMobile}><a href="fees">Slots and Fees</a></li>
 				<li on:click={closeMobile}><a href="contact">Contact</a></li>
-				<li on:click={closeMobile}><a href="Community" class="new">Community Outreach</a></li>
+				<li on:click={closeMobile}><a href="community" class="new">Community Outreach</a></li>
 			</ul>
 		</div>
 		{/if}
