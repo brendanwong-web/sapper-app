@@ -231,6 +231,7 @@
 				<li on:click={closeMobile}><a href="fees">Slots and Fees</a></li>
 				<li on:click={closeMobile}><a href="contact">Contact</a></li>
 				<li on:click={closeMobile}><a href="community" class="new">Community Outreach</a></li>
+				<li on:click={closeMobile}><a href="mindfulness" class="new">Mindfulness</a></li>
 			</ul>
 		</div>
 		{/if}
@@ -253,6 +254,7 @@
 			<li><a href="fees" class:active={segment === 'fees'}>Slots and Fees</a></li>
 			<li><a href="contact" class:active={segment === 'contact'}>Contact</a></li>
 			<li><a href="community" class:active={segment === 'community'} class:new={true}>Community Outreach</a></li>
+			<li><a href="mindfulness" class:active={segment === 'mindfulness'} class:new={true}>Mindfulness Outreach</a></li>
 		</ul>
 	</nav>
 	{/if}

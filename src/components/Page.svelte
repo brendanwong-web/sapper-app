@@ -59,6 +59,10 @@
       color: #4e2509;
       background:#db693b;
     }
+    .mindfulness {
+      color: #e6d8f2;
+      background: #6818ab;
+    }
   @media only screen and (min-width: 760px) {
     .container {
       display: flex;
