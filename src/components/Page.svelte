@@ -60,8 +60,10 @@
       background:#db693b;
     }
     .mindfulness {
-      color: #e6d8f2;
-      background: #6818ab;
+      color: hsl(0, 0%, 100%);
+      background: hsl(19, 58%, 67%);
+      position: relative;
+      overflow: hidden;
     }
   @media only screen and (min-width: 760px) {
     .container {

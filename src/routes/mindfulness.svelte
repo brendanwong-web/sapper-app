@@ -23,6 +23,7 @@
 		padding-left: 15rem;
 		padding-right: 15rem;
 		padding-bottom: 3rem;
+		padding-top: 2rem;
 		margin-bottom: 3rem;
 		display: grid;
 		grid-template-columns: 1fr 2fr;
@@ -33,6 +34,13 @@
 		"video text"
 		;
 		font-size: 20px;
+	}
+
+	.head-image {
+		width: clamp(100%, 20vw, 600px);
+		height: auto;
+		border-radius: 7px;
+
 	}
 
 	.text {
@@ -101,8 +109,12 @@
 		border-top-right-radius: 7px;
 		bottom: -1rem;
 		left: -1.5em;
-		background-color: rgb(213, 176, 248);
+		background-color: hsl(24, 100%, 74%);
 		z-index: -99;
+	}
+
+	.mobile-break {
+		display: block;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -114,6 +126,10 @@
 			margin: 0 0 30px 0;
 			position: relative;
 		}
+
+		.mobile-break {
+		display: none;
+	}
 
 	.vid-wrapper p {
 		text-align: left;
@@ -127,7 +143,7 @@
 		width: calc(100% + 34px);
 		margin-left: -1.5em;
 		height: fit-content;
-		background-color: rgb(203, 191, 255);	
+		background-color: hsl(24, 100%, 74%);
 		border-bottom: 5px solid white;
 		padding: 10px;
 		font-size: 18px;
@@ -137,7 +153,7 @@
 			width: 100%;
 			margin-left: 0;
 			height: fit-content;
-			background-color: rgb(203, 191, 255);	
+			background-color: hsl(24, 100%, 95%);	
 			border-bottom: 5px solid white;
 			padding: 10px;
 			font-size: 18px;
@@ -153,7 +169,7 @@
 	}
 
 	.header	{
-		background-color: hsl(251, 100%, 70%);
+		background-color: hsl(24, 100%, 74%);
 		font-weight: 700;
 		color: white;
 	}
@@ -164,7 +180,7 @@
 	}
 
 	.footer {
-		background-color: rgb(255, 246, 169);
+		background-color: rgb(238, 215, 151);
 	}
 
 </style>
@@ -179,11 +195,9 @@
 		<h1>Mindfulness</h1>
 	</span>
 	<span slot="writeup">
-		<h2>Mindfulness@Learning Hearts</h2>
-			<Linebreak />
-		<p>The programme at Learning Hearts Therapy is the by-product of her genuine 
-			passion and in-depth experience in the areas of foundational reading and 
-			numeracy development.</p>
+		<h2>Mindfulness<br class="mobile-break">@Learning Hearts</h2>
+		<img src="mindfulness.jpg" class="head-image" alt="mindfulness">
+		<Linebreak />
 	</span></Page>
 
 {#if mobile}
@@ -220,7 +234,7 @@
 			Who
 		</div>
 		<div class="mobile-div">
-			<p>Adults and Youth (16 years and above)</p>
+			<p>Adults and Youth</p>
 			<p>
 				(N.B. pre-course interview and registration process will be undertaken to better understand
 				your needs and to determine if this course will be beneficial for you)

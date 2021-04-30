@@ -35,6 +35,9 @@
   .community {
     background: #2c1303;
   }
+  .mindfulness {
+    background: #b86b3c;
+  }
 </style>
 
 <div class="linebreak {param}"></div>
