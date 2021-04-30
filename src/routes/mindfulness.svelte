@@ -109,7 +109,7 @@
 		border-top-right-radius: 7px;
 		bottom: -1rem;
 		left: -1.5em;
-		background-color: hsl(24, 100%, 74%);
+		background-color: hsl(37, 100%, 82%);
 		z-index: -99;
 	}
 
@@ -143,7 +143,7 @@
 		width: calc(100% + 34px);
 		margin-left: -1.5em;
 		height: fit-content;
-		background-color: hsl(24, 100%, 74%);
+		background-color: hsl(24, 100%, 95%);
 		border-bottom: 5px solid white;
 		padding: 10px;
 		font-size: 18px;
