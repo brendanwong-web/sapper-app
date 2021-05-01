@@ -71,17 +71,16 @@
 	}
 
 	ul {
-		padding-left: 15px;
+		padding-left: 1.5em;
 	}
 
 	ul li {
 		margin: 30px 0;
-		padding-left: 20px;
+		padding-left: 15px;
 	}
 
 	ul li::marker {
 		color:hsl(24, 100%, 74%);
-		content: ">";
 		font-weight: 700;
 	}
 
