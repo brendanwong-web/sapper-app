@@ -175,7 +175,7 @@
 	</span>
 	<span slot="writeup">
 			<h2>Community Outreach Programme</h2>
-			<p>As part of the SMOTA Reading Angels programme, our reading programme is being brought to vulnerable children from disadvantaged families in the Bukit Batok neighbourhood.</p>
+			<p>As part of the church of St Mary of the Angels(SMOTA) Reading Angels programme, our reading programme is being brought to vulnerable children from disadvantaged families in the Bukit Batok neighbourhood.</p>
 			<Linebreak />
 			<a href="https://www.worldbank.org/en/news/immersive-story/2019/11/06/a-learning-target-for-a-learning-revolution">Ending Learning Poverty</a>
 	</span>
