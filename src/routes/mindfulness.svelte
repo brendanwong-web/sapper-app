@@ -381,10 +381,8 @@
 				Dates
 			</div>
 			<div class="mobile-div">
-				<p>May 26th, 29th </p>
-				<p>
-				June 5th, 8th, 12th, 15th, 19th (Retreat), 22nd, 26th
-				</p>
+				<p>Next course starts Aug/Sep</p>
+				<p>Special course for teens starts November</p>
 			</div>
 			<div class="mobile-div header">
 				Venue
@@ -396,7 +394,9 @@
 				Fees
 			</div>
 			<div class="mobile-div">
-				<p>$600<br> (paid in full only upon enrollment)</p>
+				<p>Registration: $50</p>
+				<p>Course: $600<br> (payable in full only upon enrollment)</p>
+				<p>To register, kindly contact us by clicking on the button below</p>
 			</div>
 			<div class="mobile-div">
 				<p>
@@ -432,7 +432,7 @@
 		<div class="text">
 			
 			<p>
-				Stress is an inescapable part of modern-day life.  We all spend a good proportion of our time (often sub-consciously) caught in the past or worrying about the future.  These habits of mind can overwhelm, rob of us restful sleep, keep us on edge and cause us to make rash decisions – fueling further stress. 
+				Stress is an inescapable part of modern-day life.  We all spend a good proportion of our time (often sub-consciously) caught in the past or worrying about the future.  These habits of mind can overwhelm, rob us of restful sleep, keep us on edge and cause us to make rash decisions – fueling further stress. 
 			</p>
 			<p>
 				Robust research has shown MBCT (Oxford Mindfulness Center) to be an effective, drug-free programme (combining Mindfulness with Cognitive-based Therapy) that is intended to address much of the above.  MBCT is an in-depth course that helps participants cultivate new skills and learn strategies and techniques for relating to stressors, engendering lasting and sustainable change and benefits such as:
@@ -475,10 +475,8 @@
 						Dates:
 					</h1>
 					<div class="content">
-						<p>May 26th, 29th </p>
-						<p>
-						June 5th, 8th, 12th, 15th, 19th (Retreat), 22nd, 26th
-						</p>
+						<p>Next course starts Aug/Sep</p>
+						<p>Special course for teens starts November</p>
 					</div>
 				</div>
 				<div class="row">
@@ -494,7 +492,9 @@
 						Fees:
 					</h1>
 					<div class="content">
-						<p>$600<br> (paid in full only upon enrollment)</p>
+						
+						<p>Registration: $50</p>
+						<p>Course: $600<br> (payable in full only upon enrollment)</p>
 						<p>To register, kindly contact us by clicking on the button below</p>
 					</div>
 				</div>
