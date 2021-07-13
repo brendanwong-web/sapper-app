@@ -4,6 +4,7 @@
 	$:mobile = $media.small;
 	import Page from '../components/Page.svelte';
 	import Linebreak from '../components/Linebreak.svelte';
+	import ScrollerM from "../components/ScrollerM.svelte";
 	import Image from '../components/Image.svelte';
 	import Collapse from '../components/Collapse.svelte';
 	import { cubicIn } from "svelte/easing";
@@ -339,6 +340,9 @@
 			</ul>
 		</section>
 		<section>
+			<ScrollerM />
+		</section>
+		<section>
 
 			<div class="brown-bg">
 	
@@ -445,7 +449,7 @@
 				<li>Improved relationship with self and others</li>
 			</ul>
 			
-			
+			<ScrollerM />
 			<br><br>
 			<h3>Programme details</h3>
 			
