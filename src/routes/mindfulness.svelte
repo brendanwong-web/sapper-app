@@ -318,7 +318,7 @@
 	<span slot="writeup">
 		<h2>Mindfulness<br class="mobile-break">@Learning Hearts</h2>
 		<p>
-			Stress is an inescapable part of modern-day life.  We all spend a good proportion of our time (often sub-consciously) caught in the past or worrying about the future.  These habits of mind can overwhelm, rob of us restful sleep, keep us on edge and cause us to make rash decisions – fueling further stress. 
+			Stress is an inescapable part of modern-day life.  We all spend a good proportion of our time (often sub-consciously) caught in the past or worrying about the future.  These habits of mind can overwhelm, rob us of restful sleep, keep us on edge and cause us to make rash decisions – fueling further stress. 
 		</p>
 		<Linebreak />
 	</span></Page>

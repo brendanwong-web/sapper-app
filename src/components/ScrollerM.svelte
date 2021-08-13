@@ -88,22 +88,7 @@
 </script>
 <svelte:window bind:scrollY={y} />
 <div class="scrolling-wrapper">
-  <div class="card">
-    <div class="card-body">
-      <div class='card-title'>
-        <h3>Claudia</h3>
-        <h1>”</h1>
-      </div>
-      <Collapse on:findY={scrollSnap} buttonCaptionClosed={'Read more' } buttonCaptionOpen={'Read less'}>
-        <span>      <p>
-          The Mindfulness course has given me a practical tool for managing my anxiety when facing current challenges with my teenagers. I learnt to hold the space before reacting to their behavior or before negative thoughts in my mind spirals out of control. I would recommend this course to anyone who wants to experience a refreshing insight to how the connection between the body and mind can be self-healing when we mindfully live our life.
-        </p></span>
-        <span slot="collapseContent">
-          <p>Special thanks to our coach for her well thought-out plan for in-door and out-door experiences for the entire course which has greatly enriched my Mindfulness journey. </p>
-        </span>
-      </Collapse>
-    </div>
-  </div>
+  
   <div class="card">
     <div class="card-body">
       <div class='card-title'>
@@ -113,11 +98,11 @@
       <Collapse on:findY={scrollSnap} buttonCaptionClosed={'Read more' } buttonCaptionOpen={'Read less'}>
         <span>      <p>
           Attending the MBCT after the MBSR has increased my awareness of the application of
-mindfulness. They really are complementary programmes that have helped me understand the
-stress/anxiety triggers and the cognitive therapy techniques that help my personal management.
-I wish that I had come to mindfulness practice earlier in my life rather than having had disasters
-trigger the urgency.
-</p></span>
+          mindfulness. They really are complementary programmes that have helped me understand the
+          stress/anxiety triggers and the cognitive therapy techniques that help my personal management.
+          I wish that I had come to mindfulness practice earlier in my life rather than having had disasters
+          trigger the urgency.
+          </p></span>
         <span slot="collapseContent">
           <p>
             I really liked and appreciated all the practices. The pacing was fine and the Content is just so
@@ -131,6 +116,22 @@ get repeated ‘ah-ha’ sentiments that bring a smile amidst some synaptic syne
   Very grateful to be on this journey and realise that it will be a long time before I’m at a place
   I’m comfortable but that’s ok. This is a journey.
 </p>
+        </span>
+      </Collapse>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class='card-title'>
+        <h3>Claudia</h3>
+        <h1>”</h1>
+      </div>
+      <Collapse on:findY={scrollSnap} buttonCaptionClosed={'Read more' } buttonCaptionOpen={'Read less'}>
+        <span>      <p>
+          The Mindfulness course has given me a practical tool for managing my anxiety when facing current challenges with my teenagers. I learnt to hold the space before reacting to their behavior or before negative thoughts in my mind spirals out of control. I would recommend this course to anyone who wants to experience a refreshing insight to how the connection between the body and mind can be self-healing when we mindfully live our life.
+        </p></span>
+        <span slot="collapseContent">
+          <p>Special thanks to our coach for her well thought-out plan for in-door and out-door experiences for the entire course which has greatly enriched my Mindfulness journey. </p>
         </span>
       </Collapse>
     </div>
