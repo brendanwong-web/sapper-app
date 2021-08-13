@@ -115,7 +115,7 @@
           Attending the MBCT after the MBSR has increased my awareness of the application of
 mindfulness. They really are complementary programmes that have helped me understand the
 stress/anxiety triggers and the cognitive therapy techniques that help my personal management.
-I wish that come to mindfulness practice earlier in my life rather than having had disasters
+I wish that I had come to mindfulness practice earlier in my life rather than having had disasters
 trigger the urgency.
 </p></span>
         <span slot="collapseContent">
